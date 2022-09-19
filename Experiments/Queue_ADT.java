@@ -1,5 +1,5 @@
 import java.util.*;
-class Queue_ADT
+public class Queue_ADT
 {
     
     public static void main(String args[])
@@ -8,7 +8,7 @@ class Queue_ADT
         int n,ch;
         System.out.println("Enter size of queue:");
         n=sc.nextInt();
-        //IntQueue obj=new IntQueue(n);
+        IntQueue obj=new IntQueue(n);
         do
         {
             System.out.println("Menu:-\n1.Insert\n2.Delete\n3.No. of elements\n4.Peek\n5.Display\n");
