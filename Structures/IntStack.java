@@ -1,5 +1,3 @@
-import javax.sound.sampled.SourceDataLine;
-
 class IntStack
 {
     int size,top;
@@ -33,6 +31,17 @@ class IntStack
     int peek()
     {
         return stack[top];
+    }
+    int length()
+    {
+        return top+1;
+    }
+    void display()
+    {
+        int temp[]=new int[top+1];
+        for(int i=0;i<=top;i++)
+        temp[i]=stack[i];
+        System.out.println(stack);
     }
     boolean isEmpty()
     {
