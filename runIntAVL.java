@@ -1,17 +1,16 @@
 import java.util.*;
-class runAVL
+class runIntAVL
 {
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        createAVL obj = new createAVL();   
+        createIntAVL obj = new createIntAVL();   
         int ch;
         do      
         {  
             System.out.println("\nMenu:\n");  
             System.out.println("1. Insert a node");
             System.out.println("2. Display AVL Tree in In order");
-            System.out.println("3.Delete element");
             System.out.println("4. Exit");
             ch = sc.nextInt();              
             switch (ch)  
@@ -25,12 +24,8 @@ class runAVL
                     obj.inorder();  
                     break;
                 case 3:
-                    System.out.println("Enter element to be deleted");
-                    obj.deletedata(sc.nextInt());
-                    break;
-                case 4:
-                    System.out.println("Finished!!");
-                    break;
+                System.out.println("Finished!!");
+                break;
                 default :   
                     System.out.println("Invalid input");  
                     break;      

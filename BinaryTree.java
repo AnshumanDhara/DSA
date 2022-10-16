@@ -86,6 +86,25 @@ class Tree
     {
         System.out.println("Number of nodes:"+count);
     }
+    void mirror()
+    {
+        root=mirror(root);
+    }
+    Node mirror(Node node)
+    {
+        if(node==null)
+        {
+            return node;
+        }
+        else
+        {
+            Node left=mirror(node.left);
+            Node right=mirror(node.right);
+            node.left=right;
+            node.right=left;
+            return node;
+        }
+    }
 }
 class BinaryTree
 {
@@ -104,5 +123,8 @@ class BinaryTree
     System.out.println("Postorder of tree");
     bi.postorder(r);
     bi.showcount();
+    bi.mirror();
+    System.out.println("Tree was mirrored.\nInorder of tree");
+    bi.inorder(r);
     }
 }
