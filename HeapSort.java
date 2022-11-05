@@ -1,21 +1,28 @@
 import java.util.*;
 public class HeapSort
 {
+    // Global variables
     int heap[];
     int size;
     int temp;
+
+    // Constructor
     HeapSort(int size)
     {
         this.size=size;
         temp=size;
         heap=new int[size+1];
     }
+
+    // Build Heap
     void buildHeap()
     {
         int i;
         for(i=(size+1)/2;i>=1;i--)
         heapify(i);
     }
+
+    // Heapify
     void heapify(int i)
     {
         int l=2*i,r=2*i+1;
@@ -47,6 +54,8 @@ public class HeapSort
             }
         }
     }
+
+    // Swap elements
     void swap(int a,int b)
     {
         int temp;
@@ -54,12 +63,16 @@ public class HeapSort
         heap[a]=heap[b];
         heap[b]=temp;
     }
+
+    // Display heap
     void print()
     {
         int i;
         for(i=1;i<=temp;i++)
         System.out.print(heap[i]+" ");
     }
+
+    // Perform heapsort
     void heapSort()
     {
         int i;
@@ -70,6 +83,8 @@ public class HeapSort
             heapify(1);
         }
     }
+
+    // Driver code
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);

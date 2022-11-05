@@ -11,7 +11,7 @@ class runIntAVL
             System.out.println("\nMenu:\n");  
             System.out.println("1. Insert a node");
             System.out.println("2. Display AVL Tree in In order");
-            System.out.println("4. Exit");
+            System.out.println("3. Exit");
             ch = sc.nextInt();              
             switch (ch)  
             {  
@@ -27,9 +27,8 @@ class runIntAVL
                 System.out.println("Finished!!");
                 break;
                 default :   
-                    System.out.println("Invalid input");  
-                    break;      
+                System.out.println("Invalid input");      
             }                         
-        } while (ch!=4);       
+        } while (ch!=3);       
     }
 }
