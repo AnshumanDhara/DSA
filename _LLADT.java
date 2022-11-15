@@ -9,10 +9,10 @@ class Node
 		next=null;
 	}
 }
-class LinkedList
+class _LinkedList
 {
 	Node head;
-	LinkedList insert(LinkedList list,int a)
+	_LinkedList insert(_LinkedList list,int a)
 	{
 		Node new_node=new Node(a);
 		if(list.head==null)
@@ -30,7 +30,7 @@ class LinkedList
 		}
 		return list;
 	}
-	void print(LinkedList list)
+	void print(_LinkedList list)
 	{
 		Node currNode=list.head;
 		System.out.println("Linked list is:- ");
@@ -47,7 +47,7 @@ class _LLADT
 	{
 		int ch;
 		Scanner sc=new Scanner(System.in);
-		LinkedList list=new LinkedList();
+		_LinkedList list=new _LinkedList();
 		do
 		{
 			System.out.println("\nMenu:-\n1.Enter a no.\n2.Print LL\n3.Exit\nEnter choice:-");
@@ -67,5 +67,6 @@ class _LLADT
 				System.out.println("Invalid input!!");
 			}
 		}while(ch!=3);
+		sc.close();
 	}
 }
