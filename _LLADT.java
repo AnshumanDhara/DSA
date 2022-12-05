@@ -50,7 +50,6 @@ class _LLADT
 		_LinkedList list=new _LinkedList();
 		do
 		{
-			System.out.println("\nMenu:-\n1.Enter a no.\n2.Print LL\n3.Exit\nEnter choice:-");
 			ch=sc.nextInt();
 			switch(ch)
 			{
