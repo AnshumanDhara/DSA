@@ -1,3 +1,4 @@
+// Make graph using Matrix
 import java.util.*;
 import java.util.Queue;
 import java.util.LinkedList;
@@ -48,7 +49,7 @@ class IntGraph
     // Print Start time and End time
     void StEt()
     {
-        System.out.println("Vertice\tS_t\tE_t");
+        System.out.println("Vertice\t\tS_t\tE_t");
         for (int i = 0; i < vertices; i++)
         {
             System.out.println(i + "\t\t" + s_t[i] + "\t" + e_t[i]);
@@ -145,7 +146,7 @@ class IntGraph
     // Print vertice levels
     void printlevels()
     {
-        System.out.println("Vertice\tlevel");
+        System.out.println("Vertice\t\tlevel");
         for (int i = 0; i < vertices; i++)
         {
             System.out.println(i + "\t\t" + l[i]);

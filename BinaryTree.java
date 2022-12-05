@@ -98,10 +98,10 @@ class Tree
         }
         else
         {
-            Node left=mirror(node.left);
-            Node right=mirror(node.right);
-            node.left=right;
-            node.right=left;
+            Node templeft=mirror(node.left);
+            Node tempright=mirror(node.right);
+            node.left=tempright;
+            node.right=templeft;
             return node;
         }
     }
@@ -126,5 +126,6 @@ class BinaryTree
     bi.mirror();
     System.out.println("Tree was mirrored.\nInorder of tree");
     bi.inorder(r);
+    sc.close();
     }
 }

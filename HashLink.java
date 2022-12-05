@@ -1,9 +1,5 @@
-// Allow quadriatic probing
-// Change size of Hash Map
-// Error: values being shown as inserted, at deleted locations
-// E.g.: size:7; insert: 45,67,18,9,27; fullHash; delete 44,18,27; fullHash; insert:13(err),1,5; fullHash; hash; done
 import java.util.*;
-public class HashArr
+public class HashLink
 {
     // Global variables
     int size,currSize;
@@ -11,7 +7,7 @@ public class HashArr
     String[] key;
 
     // Constructor
-    HashArr(int size)
+    HashLink(int size)
     {
         this.size=size;
         currSize=0;
@@ -111,6 +107,7 @@ public class HashArr
         return currSize==size?true:false;
     }
 
+
     // Driver code
     public static void main(String[] args)
     {
@@ -118,7 +115,7 @@ public class HashArr
         int s,ch,f;
         System.out.print("\nEnter size of HashMap: ");
         s=sc.nextInt();
-        HashArr hash=new HashArr(s);
+        HashLink hash=new HashLink(s);
         do
 		{
 			System.out.println("\nMenu:-\n1.Add value\n2.Delete value\n3.Find value\n4.Print HashMap\n5.Print full HashMap\n6.Exit");
