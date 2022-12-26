@@ -124,7 +124,7 @@ class BinaryTree
     bi.postorder(r);
     bi.showcount();
     bi.mirror();
-    System.out.println("Tree was mirrored.\nInorder of tree");
+    System.out.println("Tree was mirrored.\nInorder of mirrored tree");
     bi.inorder(r);
     sc.close();
     }

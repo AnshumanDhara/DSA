@@ -42,6 +42,7 @@ public class HashArr
                 System.out.println("Value inserted at "+i);
                 return;
             }
+            // Error here
             else if(key[i]=="D")
             {
                 key[i]="O";
